@@ -2,31 +2,54 @@ import React from 'react'
 import Nav from 'react-bootstrap/Nav';
 import imagen_1 from "../assets/images/Mapastepec.jpg";
 import styles from "../css/nav.css";
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
+
  function Navar() {
 
   return (
-    <Nav fill variant="tabs" defaultActiveKey="/home" className='navprincipal'>
-       
-      
-      <div className='contenedor-img'>
-        <img src={imagen_1} alt="logo2"  className='logo2'/>
-      </div>
-    
-
-    <Nav.Item>
-      <Nav.Link href="/link-1">Problematica
-      </Nav.Link>
-      <div className="problematica1">
-      </div>
-    </Nav.Item>
-    <Nav.Item>
-      <Nav.Link eventKey="link-2">Propuesta</Nav.Link>
-    </Nav.Item>
-    <Nav.Item>
-      <Nav.Link eventKey="link-3">Modulos</Nav.Link>
-    </Nav.Item>
-  </Nav>
-  
+    <>
+    <Navbar bg="light">
+      <Container>
+        <Navbar.Brand href="#home">Brand link</Navbar.Brand>
+      </Container>
+    </Navbar>
+    <br />
+    <Navbar bg="light">
+      <Container>
+        <Navbar.Brand>Brand text</Navbar.Brand>
+      </Container>
+    </Navbar>
+    <br />
+    <Navbar bg="dark">
+      <Container>
+        <Navbar.Brand href="#home">
+          <img
+            src="/img/logo.svg"
+            width="30"
+            height="30"
+            className="d-inline-block align-top"
+            alt="React Bootstrap logo"
+          />
+        </Navbar.Brand>
+      </Container>
+    </Navbar>
+    <br />
+    <Navbar bg="dark" variant="dark">
+      <Container>
+        <Navbar.Brand href="#home">
+          <img
+            alt=""
+            src="/img/logo.svg"
+            width="30"
+            height="30"
+            className="d-inline-block align-top"
+          />{' '}
+          React Bootstrap
+        </Navbar.Brand>
+      </Container>
+    </Navbar>
+  </>
   );
 }
 export default Navar;
