@@ -1,0 +1,37 @@
+.footerDistributed{
+display: flex;    
+align-items: center;
+justify-content: center;
+background-color: black;
+color: white;
+width: 100vw;
+height: 15vh;
+}
+.divright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.divcenter{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ 
+}
+.divleft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.logo{
+    
+    width: 30%;
+    height: 20%;
+  
+}
